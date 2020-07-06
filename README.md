@@ -3,3 +3,11 @@ Bu repoda farklı renk bootstrap button, background, text, link ve borderlar scs
 
 
 https://flatuicolors.com/palette/defo bu linkteki renkler kullanılmıştır.
+
+Kısa Doc : 
+
+_variables.scss altındaki color array içine renk isimleri ve kodları değiştrerek farklı renk paletleri oluşturabilirsiniz.
+
+Bazı buttonlarda yazıların görülme sıkıntısı yaşanırsa buttons.scss dosyası içindeki @if @else statment'ındaki $index'lere göre renk belirleme yapabilirsiniz.
+
+Saygılar.
