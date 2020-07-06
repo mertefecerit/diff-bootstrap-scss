@@ -1,0 +1,5 @@
+@each $index, $color in $colors {
+    .bg-#{$index} {
+        background-color : $color;
+    }
+}

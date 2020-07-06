@@ -1,0 +1,5 @@
+@each $index, $color in $colors {
+    .text-#{$index} {
+        color : $color;
+    }
+}
