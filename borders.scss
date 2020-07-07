@@ -1,5 +1,0 @@
-@each $index, $color in $colors {
-    .border-#{$index}{
-        border-color : $color;
-    }
-}
