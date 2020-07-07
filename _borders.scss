@@ -1,0 +1,11 @@
+.border {
+    border: 1px solid black !important;
+}
+.rounded {
+    border-radius: 0.25rem !important;
+}
+@each $index, $color in $colors {
+    .border-#{$index}{
+        border-color : $color !important;
+    }
+}

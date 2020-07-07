@@ -1,0 +1,9 @@
+@each $index, $color in $colors {
+    a.text-#{$index} {
+        color : $color !important;
+        text-decoration: none !important;
+    }
+    a.text-#{$index}:hover {
+        color : darken($color,20%) !important;
+    }
+}

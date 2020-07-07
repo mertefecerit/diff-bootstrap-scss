@@ -1,0 +1,20 @@
+div.alert {
+    border-radius: 0.25rem;
+    width : 100%;
+    font-weight: bold;
+    text-align: center;
+    padding : 0.2rem;
+    margin-bottom: 0.5rem;
+}
+@each $index, $color in $colors {
+    @if $index == "sunFlower" or $index == "alizarin" or $index == "emerald"{
+        div.alert.alert-#{$index} {
+            @if $index == "sunFlower" {
+                color : #000000;
+            }@else{
+            color : #ffffff;
+            }
+            background-color: rgba($color,0.9) !important;
+        }
+    }
+}

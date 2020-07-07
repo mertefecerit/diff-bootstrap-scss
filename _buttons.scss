@@ -1,0 +1,63 @@
+.btn {
+    display: inline-block;
+    padding : 1rem;
+    border-radius: 0.25rem;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    background-color: transparent;
+    font-weight: bold;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn.btn-block {
+    width : 100%;
+}
+.btn.btn-sm {
+    padding : 0.8rem;
+    font-size: 0.9rem;
+}
+@each $index, $color in $colors {
+    .btn-#{$index} {
+        background-color: $color !important;
+        border-color: $color !important;
+        @if $index == "sunFlower" or $index == "clouds" or $index == "silver" or $index == "white"{
+            color: #000000 !important;
+        } @else {
+            color: #ffffff !important;
+        }
+    }
+    .btn-#{$index}:hover {
+        background-color: darken($color, 10%) !important;
+        border-color: darken($color, 10%) !important;
+    }
+    .btn-#{$index}:focus,
+    .btn-#{$index}.focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba($color, 0.3) !important;
+    }
+
+    .btn-outline-#{$index} {
+        color: $color !important;
+        border-color: $color !important;
+    }
+    .btn-outline-#{$index}:hover {
+        @if $index == "sunFlower" or $index == "clouds" or $index == "silver" {
+            color: #000000 !important;
+        } @else {
+            color: #ffffff !important;
+        }
+        background-color: $color !important;
+        border-color: $color !important;
+    }
+    .btn-outline-#{$index}:focus,
+    .btn-outline-#{$index}.focus {
+        outline: 0 !important;
+        box-shadow: 0 0 0 0.2rem rgba($color, 0.3) !important;
+    }
+}

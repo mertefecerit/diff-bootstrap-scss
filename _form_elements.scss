@@ -1,0 +1,17 @@
+input:focus,select:focus,textarea:focus{
+    outline: none;
+}
+.form-control {
+    display: block;
+    padding : 1rem;
+    border-radius: 0.25rem;
+    width : 100%;
+    font-weight: bold;
+    border : 2px solid #7f8c8d;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-family: "Open Sans","Font Awesome 5 Free";
+}
+.form-control.failure {
+    border : 2px solid #e74c3c;
+}
